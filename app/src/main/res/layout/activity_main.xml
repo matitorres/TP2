@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMoneda1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Dólares"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/etDolares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMoneda1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tvMoneda2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDolares"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Euros"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMoneda2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:text=" "
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btnInvertir"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvResultado"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#C2C2C2"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Invertir"
+        android:textSize="24sp" />
+
+
+    <Button
+        android:id="@+id/btnConvertir"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInvertir"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#8BC34A"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Convertir"
+        android:textSize="24sp" />
+
+</RelativeLayout>
